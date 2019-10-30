@@ -21,7 +21,7 @@ export default class Contact extends Component {
     // console.log(this.props);
     return (
       <div className="Contact">
-        <img className="avatar" src={this.props.image} alt={this.props.name} />
+        <img className="avatar" src={this.props.avatar} alt={this.props.name} />
         <div>
           <h3 className="name">{this.props.name}</h3>
           {/* logique d'inversion au click'  */}
