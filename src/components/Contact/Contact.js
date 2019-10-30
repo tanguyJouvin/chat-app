@@ -8,8 +8,14 @@ export default class Contact extends Component {
   constructor(props){
     super(props);
     this.state = {
-      online: false
+      online: props.online
     }
+  }
+  invertStatus = event => {
+    const offline = !this.state.online;
+    this.setState({
+      online : offline
+    })
   }
   
   render() {
@@ -19,7 +25,7 @@ export default class Contact extends Component {
         <img className="avatar" src={this.props.avatar} alt={this.props.name}/>
         <div>
           <div className="name">{this.props.name}</div>
-          <div className="status">
+          <div className={this.state.online ? "status-online" : "status-offline"} onClick={this.invertStatus}>
             {this.props.online ? Online : Offline}
           </div>
         </div>
