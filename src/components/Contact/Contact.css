@@ -26,9 +26,6 @@
   color: #999;
   margin: 0;
 }
-.status{
-  display: flex;
-}
 
 /* Status (rounded&colored indicator) */
 .Contact .status .status-online,

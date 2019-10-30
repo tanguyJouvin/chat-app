@@ -1,5 +1,5 @@
 import React from 'react';
-import Contact from './components/Contact/Contact';
+import ContactList from './components/Contact/ContactList';
 import Navbar from './components/Navbar/Navbar';
 // import QuoteCard from './components/QuoteCard/QuoteCard';
 import './App.css';
@@ -8,19 +8,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Contact
-        avatar="https://randomuser.me/api/portraits/women/75.jpg"
-        name="Gertrude Perry"
-        
-      />
-      <Contact
-        avatar="https://randomuser.me/api/portraits/women/80.jpg"
-        name="Peyton Holland"
-        />
-      <Contact
-        avatar="https://randomuser.me/api/portraits/women/8.jpg"
-        name="Janice Horton"
-      />
+      <ContactList />
 
       {/* <QuoteCard
         quote="I believe the children are the future... Unless we stop them now!"
